@@ -64,6 +64,9 @@ uvx pocket-tts serve
 ```
 *This command will automatically download and start the local TTS server at `http://localhost:8000`. Keep this window open.*
 
+> [!TIP]
+> **Support**: If the server fails to start or you encounter issues, please contact **betle0409@gmail.com** for support.
+
 ### Step 2: Initialize JARVIS
 In your main terminal, run the following command:
 
