@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environment
+.env
+.venv
+venv/
+ENV/
+
+# Data & History
+data/
+voice/*.wav
+!voice/JARVIS - Marvel's Iron Man 3 Second Screen Experience - Trailer - Marvel Entertainment (128k)-enhanced-v2.wav
+
+# VS Code
+.vscode/
+
+# Temporary
+temp/
+/tmp/
+nul
