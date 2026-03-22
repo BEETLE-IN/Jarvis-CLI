@@ -36,14 +36,18 @@ This project is equipped with the **Real JARVIS Voice**, meticulously crafted th
   - `winsound` (Default on Windows).
 
 ### 2. Installation
-Clone the repository and install the required Python libraries:
+Clone the repository and install the core dependencies:
 
 ```bash
-pip install groq pocket-tts sounddevice scipy speech_recognition openai-whisper
+pip install groq sounddevice scipy speech_recognition openai-whisper
 ```
+*Note: `pocket-tts` can be run directly using `uvx` without manual installation.*
 
 ### 3. Environment Configuration
-- **Groq API Key**: Obtain your key from [Groq Cloud](https://console.groq.com/) and replace the key in `jarvis.py` (or set it as an environment variable).
+- **Groq API Key**: Obtain your key from [Groq Cloud](https://console.groq.com/) and set it as an environment variable:
+  ```powershell
+  $env:GROQ_API_KEY = "your_key_here"
+  ```
 - **FFmpeg Path**: Ensure the `ffmpeg_path` variable in `jarvis.py` points to your local FFmpeg installation.
 
 ---
@@ -53,12 +57,12 @@ pip install groq pocket-tts sounddevice scipy speech_recognition openai-whisper
 To experience the full capability of JARVIS, follow these two steps:
 
 ### Step 1: Start the Pocket TTS Server
-The text-to-speech engine runs more efficiently as a standalone server. Open a separate CLI window and run:
+The text-to-speech engine runs most efficiently as a standalone server. This project recommends using `uv` for seamless execution:
 
 ```bash
-pocket-tts serve
+uvx pocket-tts serve
 ```
-*This will start the local TTS server at `http://localhost:8000`. Keep this window open.*
+*This command will automatically download and start the local TTS server at `http://localhost:8000`. Keep this window open.*
 
 ### Step 2: Initialize JARVIS
 In your main terminal, run the following command:
